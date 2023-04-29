@@ -11,7 +11,7 @@ const getdata=async ()=>{
     try {
         const response=await axios.get(`https://restcountries.com/v3.1/all`);
      setdata(response.data)
-     console.log(data);
+     console.log(response.data);
     } catch (error) {
         
     }
@@ -33,10 +33,9 @@ getdata();
            <div className='card'>
            {
             data.map((country)=>(
-                <div>
+                <div key={country.name.common}>
                    <h1 className="title">{country.name.common}
                    </h1>
-
                      <p>{country.capital}</p>
                     <img className='image' src={country.flags.png} alt={country.region} /> 
                    </div>   
