@@ -1,13 +1,16 @@
-
+import { Route, Routes } from 'react-router';
 import './App.css';
-import Lesson52 from './lesson-52/Lesoon52';
-import Practicing from './lesson-52/Forpracticing';
+import Cards from './ComponetA/CArds/Cards';
+import ComponetA from './ComponetA/Component/ComponetA';
 function App() {
 
   return (
-    <div className="App">
-     <Practicing/>
-    </div>
+    <>
+      <Routes>
+       <Route element={<ComponetA/>} path='/'/>
+       <Route element={<Cards/>} path='news/:id'/>
+      </Routes>
+    </>
   );
 }
 
