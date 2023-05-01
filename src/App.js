@@ -1,12 +1,15 @@
-
+import { Route, Routes } from 'react-router';
 import './App.css';
-import Lesson52 from './lesson-52/Lesoon52';
 import Practicing from './lesson-52/Forpracticing';
+import Page from './Page/Page'
 function App() {
 
   return (
     <div className="App">
-     <Practicing/>
+    <Routes>
+      <Route element={<Practicing/>} path='/'/>
+      <Route element={<Page/>} path='news/:name'/>
+    </Routes>
     </div>
   );
 }

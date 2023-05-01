@@ -1,17 +1,17 @@
-import './main.css'
+import './parctising.scss'
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { Link } from 'react-router-dom';
 function Practicing() {
 
-    const [chanche,setchanche]=useState('post');
+    
     const [data,setdata]=useState([]);
    
 const getdata=async ()=>{
     try {
         const response=await axios.get(`https://restcountries.com/v3.1/all`);
      setdata(response.data)
-     console.log(response.data);
+    
     } catch (error) {
         
     }
@@ -24,20 +24,15 @@ getdata();
 
     return(
         <div>
-            <button onClick={()=>setchanche('post')}>post</button>
-            <button onClick={()=>setchanche('data')}>data</button>
-            <button onClick={()=>setchanche('common')}>common</button>
-         {
-            chanche
-         }
            <div className='card'>
            {
             data.map((country)=>(
                 <div key={country.name.common}>
                    <h1 className="title">{country.name.common}
                    </h1>
-                     <p>{country.capital}</p>
+                     <p>{country.capital} </p>
                     <img className='image' src={country.flags.png} alt={country.region} /> 
+                    <Link to={`news/${country.name.common}`}>Page</Link>
                    </div>   
                 ))
             }
