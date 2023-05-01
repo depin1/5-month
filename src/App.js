@@ -1,14 +1,12 @@
 import { Route, Routes } from 'react-router';
 import './App.css';
-import Cards from './ComponetA/CArds/Cards';
-import ComponetA from './ComponetA/Component/ComponetA';
+import Fatchdata from './Rescountry/Fatchdata/Fatchdata';
 function App() {
 
   return (
     <>
       <Routes>
-       <Route element={<ComponetA/>} path='/'/>
-       <Route element={<Cards/>} path='news/:id'/>
+<Route element={<Fatchdata/>} path='/'/>
       </Routes>
     </>
   );
