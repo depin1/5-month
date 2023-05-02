@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1150px;
+  gap: 40px;
+}
+
+.image {
+  width: 100%;
+}/*# sourceMappingURL=parctising.css.map */
