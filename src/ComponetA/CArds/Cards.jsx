@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './cards.scss';
 function Cards() {
 
 
@@ -21,11 +22,12 @@ function Cards() {
     <div>
       <div className='box2'>
       <Link to='/'>Home page</Link>
-    <h2>{state.title} </h2>
-      <img className='img' src={state.imageUrl} alt={state.title} />
-      <p>
+    <h2 className='title'>{state.title} </h2>
+    <p>
         {state.summary}
       </p>
+      <img className='img' src={state.imageUrl} alt={state.title} />
+    
     </div>
      
     </div>
