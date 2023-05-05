@@ -1,0 +1,26 @@
+.for_input{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.105);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    
+}
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+}
+.box{
+    border-left:1px solid rgba(0, 0, 0, 0.304) ;
+    width: 700px;
+    padding: 0 20px;
+}
+.for_input{
+    margin-top: 20px;
+    width: 50%;
+}
+
