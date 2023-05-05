@@ -4,7 +4,7 @@ import axios from "axios";
 import Props from '../Props/Props';
 function Practicing() {
 
-    
+    const [search,setsearch]=useState('');
     const [data,setdata]=useState([]);
    
 const getdata=async ()=>{
@@ -16,20 +16,31 @@ const getdata=async ()=>{
         
     }
 }
-
+console.log(data);
 
 useEffect(()=>{
 getdata();
 },[])
 
+const fatchdatamap=data.filter ((params)=>{
+    if (!search.trim()) {
+        return params
+    }
+else if (params.name.common.toLowerCase().includes(search)) {
+    return params
+}
+}).map((country)=>(
+    <Props key={country.name.common} name={country.name.common} ccn3={country.ccn3} img={country.flags.png} capital={country.capital} />
+    ))
+
     return(
         <div>
+            <input type="text" value={search} onChange={(e)=>setsearch(e.target.value)} />
            <div className='card'>
+           
            {
-            data.map((country)=>(
-                <Props key={country.name.common} name={country.name.common} ccn3={country.ccn3} img={country.flags.png} capital={country.capital} />
-                ))
-            }
+            fatchdatamap
+           }
            </div>
         </div>
     )

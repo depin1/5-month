@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './props.scss'
 function Props(props) {
 const {name,img,capital,ccn3}=props;
   return (
-    <div>
-        <Link to={`/alpha/${ccn3}`}>Read more</Link>
-    <h2>
+    <div className='props'>
+        <Link className='href' to={`/alpha/${ccn3}`}>
+        <h2 className='title'>
        {name} </h2>  
        <p>
        {capital} 
        </p>
-       <img src={img} alt={name} />
-<h2>{ccn3}</h2>
+       <img className='image' src={img} alt={name} />
+        </Link>
     </div>
   )
 }
