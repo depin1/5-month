@@ -17,7 +17,9 @@ a{
 }
 .item1{
     display: flex;
+    align-items: center;
     column-gap:15px;
+    line-height: 10px;
 }
 ul li{
     line-height: 20px;
@@ -36,7 +38,33 @@ padding: 15px 80px;
 border:  none;
 border-radius: 30px;
 margin: 10px 0 0 -25px;
+transition: .3s;
 }
 .image{
     margin: 15px 0 25px 0;
+}
+.icon{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.759);
+}
+.pad:hover{
+    background-color: #000000b6;
+    
+   
+    .home_title{
+        color: white;
+    }
+    .icon{
+        color: white;
+    }
+}
+.pad{
+    padding: 10px;
+    transition: .2s;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.207) ,rgba(255, 255, 255, 0.563) , rgba(255, 0, 0, 0.166));
+    background-color: transparent;
+    color: rgb(0, 0, 0);
 }

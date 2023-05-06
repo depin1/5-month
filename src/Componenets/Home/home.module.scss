@@ -38,6 +38,12 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    transition: .3s;
+}
+.btn:hover{
+    background-image: linear-gradient(to left , rgba(0, 0, 0, 0.126) ,rgba(255, 255, 255, 0.563) , rgba(255, 0, 0, 0.082));
+    background-color: transparent;
+    color: rgb(0, 0, 0);
 }
 .minbox{
     display: flex;

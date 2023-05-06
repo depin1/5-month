@@ -72,7 +72,7 @@ function Footer() {
 
        </div>
        <div className='end_box'>
-         <div className='min-box'>
+         <div className='min-box2'>
           <div>
             <img src={men} alt="" />
           </div>
@@ -83,7 +83,7 @@ function Footer() {
           <div><button className='btn-showmore'>Follow</button></div>
          </div>
        </div>
-       <Link className='link2'>Show more</Link>
+       <Link  className='link2'>Show more</Link>
     </div>
   )
 }
