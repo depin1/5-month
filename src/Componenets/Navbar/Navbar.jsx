@@ -11,6 +11,7 @@ import Bookmarks from '../images/icon/Bookmarks.svg';
 import Lists from '../images/icon/Lists.svg';
 import More from '../images/icon/More.svg';
 //propurty
+//icons
 import './navbar.scss';
 
 function Navbar() {
