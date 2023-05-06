@@ -23,4 +23,53 @@
     margin-top: 20px;
     width: 50%;
 }
+.set1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Settingpage{
+    margin-top: 20px;
+    max-width: 373px;
+    background-color: #F7F9F9;
+    border-radius: 12px;
+    padding: 20px 20px;
+}
+.link{
+   color: rgb(0, 136, 255);
+  
+}
+.link2{
+    color: rgb(0, 136, 255);
+   margin-left: 20px;
+ }
+.min-box{
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+.title-minbox{
+    line-height: 0;
+}
+.end_box{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.end_box2{
+    display: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.texting{
+    margin-bottom: 30px;
+}
+.btn-showmore{
+    padding: 10px 15px ;
+    background-color: black;
+    border:  none;
+    color: white;
 
+    border-radius: 20px;
+}

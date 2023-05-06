@@ -10,7 +10,6 @@ import Profile from '../images/icon/Profile.svg';
 import Bookmarks from '../images/icon/Bookmarks.svg';
 import Lists from '../images/icon/Lists.svg';
 import More from '../images/icon/More.svg';
-
 //propurty
 import './navbar.scss';
 
